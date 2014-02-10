@@ -26,7 +26,7 @@ class Configuration implements ConfigurationInterface
                         ->scalarNode('username')->isRequired()->end()
                         ->scalarNode('password')->isRequired()->end()
                         ->scalarNode('token')->isRequired()->end()
-                        ->scalarNode('logging')->defaultValue('%kernel.debug%')->end()
+                        ->scalarNode('logger')->defaultNull()->end()
                     ->end()
                 ->end()
             ->end();
